@@ -17,6 +17,21 @@
 
 // receipt-quote.json
 {
+  "name": "ReceiptQuote",
+  "plural": "ReceiptQuotes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "amount": {
+      "type": "number",
+      "required": false,
+      "default": 0
+    }
+  },
+  "validations": [],
   "relations": {
     "receipt": {
       "type": "belongsTo",
@@ -28,5 +43,7 @@
       "model": "Quote",
       "foreignKey": ""
     }
-  }
+  },
+  "acls": [],
+  "methods": {}
 }
