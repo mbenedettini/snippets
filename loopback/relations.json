@@ -1,0 +1,22 @@
+"relations": {
+  "worker": {
+    "type": "belongsTo",
+    "model": "Worker",
+    "foreignKey": ""
+  },
+  "pendingSpendings": {
+    "type": "hasMany",
+    "model": "PendingSpending",
+    "foreignKey": "dstVoucherId"
+  },
+  "generatedPendingSpendings": {
+    "type": "hasMany",
+    "model": "PendingSpending",
+    "foreignKey": "srcVoucherId"
+  },
+  "operativeSpendings": {
+    "type": "hasMany",
+    "model": "OperativeSpending",
+    "foreignKey": ""
+  }
+}
