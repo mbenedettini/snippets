@@ -1,0 +1,32 @@
+// quotes.json
+{
+  "relations": {
+    "quotes": {
+      "type": "hasMany",
+      "model": "Quote",
+      "foreignKey": "receiptId",
+      "through": "ReceiptQuote"
+    },
+    "receiptQuotes": {
+      "type": "hasMany",
+      "model": "ReceiptQuote",
+      "foreignKey": ""
+    }
+  }
+}
+
+// receipt-quote.json
+{
+  "relations": {
+    "receipt": {
+      "type": "belongsTo",
+      "model": "Receipt",
+      "foreignKey": ""
+    },
+    "quote": {
+      "type": "belongsTo",
+      "model": "Quote",
+      "foreignKey": ""
+    }
+  }
+}
