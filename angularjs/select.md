@@ -1,4 +1,5 @@
-=== Angular material select of a list of loopback objects ===
+### Angular material select of a list of loopback objects
+
 
 ```html
 <div layout-gt-sm="row">
